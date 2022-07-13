@@ -71,7 +71,7 @@ let initialState = {
     changeFigure: null,
     moveTeam: "white"
 }
-
+localStorage.clear();
 if(JSON.parse(localStorage.getItem("state")) !== null){
     initialState = JSON.parse(localStorage.getItem("state"));
 }
